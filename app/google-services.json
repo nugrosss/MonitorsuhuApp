@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "91678837758",
+    "firebase_url": "https://smargarden-44ffb-default-rtdb.firebaseio.com",
+    "project_id": "smargarden-44ffb",
+    "storage_bucket": "smargarden-44ffb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91678837758:android:75b0d35e46ad63a9d34eaf",
+        "android_client_info": {
+          "package_name": "com.example.ayobisaaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91678837758-fptn0i6t0n7o229s4desjo3me61kijdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfNgm-QVkbvm4mklrdH5e34n5Y-zdP6yM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91678837758-fptn0i6t0n7o229s4desjo3me61kijdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91678837758:android:5ca0861e56fab845d34eaf",
+        "android_client_info": {
+          "package_name": "com.example.projecfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91678837758-fptn0i6t0n7o229s4desjo3me61kijdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfNgm-QVkbvm4mklrdH5e34n5Y-zdP6yM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91678837758-fptn0i6t0n7o229s4desjo3me61kijdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

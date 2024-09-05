@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.example.ayobisaaa.MainActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DEE2E6"
+        tools:context=".MainActivity">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewph"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="84dp"
+            app:cardBackgroundColor="#E9ECEF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/phNumberLayout"
+                android:layout_width="125dp"
+                android:layout_height="111dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/coolveticarg"
+                    android:text="@{activity.suhu}"
+                    android:textColor="#343A40"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/label1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/coolveticarg"
+                    android:text="PH Status"
+                    android:textColor="#343A40"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewPWM"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="52dp"
+            app:cardBackgroundColor="#E9ECEF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/pwmNumberLayout"
+                android:layout_width="108dp"
+                android:layout_height="112dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textViewPWM"
+
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/coolveticarg"
+                    android:text="@{activity.kelembapan}"
+                    android:textColor="#343A40"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/labelPWM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPWM"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/coolveticarg"
+                    android:text="PWM Status"
+                    android:textColor="#343A40"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewbartp"
+            android:layout_width="322dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="248dp"
+            app:cardBackgroundColor="#E9ECEF"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+
+                app:srcCompat="@drawable/temp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperatur"
+                android:fontFamily="@font/coolveticarg"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="50dp"
+                android:textSize="18dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewbarsidetp"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            app:cardBackgroundColor="#ADB5BD"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardViewbartp"
+            app:layout_constraintTop_toTopOf="@+id/cardViewbartp">
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewbarKb"
+            android:layout_width="322dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            app:cardBackgroundColor="#E9ECEF"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewbartp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/humidity"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelembapan"
+                android:fontFamily="@font/coolveticarg"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="50dp"
+                android:textSize="18dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewbarsidekb"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="#ADB5BD"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardViewbarKb"
+            app:layout_constraintTop_toTopOf="@+id/cardViewbarKb">
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewpump1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="48dp"
+            app:cardBackgroundColor="#E9ECEF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.187"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewbarKb">
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewpump2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="48dp"
+            app:cardBackgroundColor="#E9ECEF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.848"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewbarKb">
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewbarmenu"
+            android:layout_width="333dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="620dp"
+            app:cardBackgroundColor="#E9ECEF"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/home"
+                android:onClick="@{() -> activity.onClikgotopageimage()}"
+
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
