@@ -118,7 +118,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity2.class);
         startActivity(intent);
     }
-
-
-//jajajajaja
+//pppppppppppppppppppppppppp
 }
