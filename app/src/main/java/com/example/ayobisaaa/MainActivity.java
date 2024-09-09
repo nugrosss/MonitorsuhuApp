@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         // Referensi langsung ke node "Motion"
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Motion");
 
-        // Mengambil data langsung dari node "kelembapan" dan "suhu"
+        // Mengambil data dari node "kelembapan" dan "suhu"
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -63,24 +64,25 @@ public class MainActivity extends AppCompatActivity {
                     String kelembapanFromDB = snapshot.child("kelembapan").getValue(String.class);
                     String suhuFromDB = snapshot.child("suhu").getValue(String.class);
 
-
-                    Intent intent = new Intent(MainActivity.this,MainActivity.class);
-                    intent.putExtra("kelembapan", kelembapanFromDB);
-                    intent.putExtra("suhu", suhuFromDB);
-
-                    // Memulai activity baru
-                    startActivity(intent);
+                    // Perbarui UI langsung tanpa Intent
+                    numberPWM.setText(suhuFromDB);
+                    numberPH.setText(kelembapanFromDB);
                 } else {
                     Log.w("Firebase", "Data Motion tidak ditemukan");
+                    Toast.makeText(MainActivity.this, "Data Firebase tidak ditemukan", Toast.LENGTH_LONG).show();
                 }
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 Log.w("Firebase", "Gagal membaca data", error.toException());
+                Toast.makeText(MainActivity.this, "Data error", Toast.LENGTH_LONG).show();
             }
         });
     }
+
+
+
 
 
     private void readSensorData() {
