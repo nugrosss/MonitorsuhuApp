@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "907655024098",
+    "firebase_url": "https://flappat-bird-default-rtdb.firebaseio.com",
+    "project_id": "flappat-bird",
+    "storage_bucket": "flappat-bird.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907655024098:android:3db10bc1be395b41b4bdbb",
+        "android_client_info": {
+          "package_name": "com.example.cobalagi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2REt8hbA5wC7_w6oW5svJfMVpA3n7zHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
