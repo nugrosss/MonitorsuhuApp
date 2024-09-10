@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     if (suhu != null) {
-                        suhuTextView.setText( suhu + "°C");
+                        suhuTextView.setText(suhu + "°C");
                     } else {
                         suhuTextView.setText("Suhu: Data tidak tersedia");
                     }
