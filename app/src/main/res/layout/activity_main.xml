@@ -243,7 +243,7 @@
             android:layout_marginStart="150dp"
             android:layout_marginTop="10dp"
             app:srcCompat="@drawable/home"
-            android:onClick="@{() -> activity.onClikgotopageimage()}"
+            android:onClick="onCLikgoToGrafik"
 
             />
 
