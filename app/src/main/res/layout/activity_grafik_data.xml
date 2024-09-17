@@ -5,13 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".grafik_data">
+    android:background="#DEE2E6"
+    tools:context=".Grafik_data">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="172dp" />
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:id="@+id/chart1"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
