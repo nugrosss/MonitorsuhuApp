@@ -26,8 +26,11 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+
     }
+
 }
+
 
 dependencies {
 
@@ -41,4 +44,5 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation(platform("com.google.firebase:firebase-bom:33.2.0"))
     implementation("com.google.firebase:firebase-database")
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }

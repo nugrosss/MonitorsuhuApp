@@ -237,13 +237,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imagetografik"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginStart="150dp"
             android:layout_marginTop="10dp"
             app:srcCompat="@drawable/home"
-            android:onClick="@{() -> activity.onClikgotopageimage()}"
+            android:onClick="onCLikgoToGrafik"
 
             />
 
